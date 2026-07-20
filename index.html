@@ -46,6 +46,8 @@ nav {
 .nav-links a:hover { color:var(--blue); }
 .lang-toggle { background:transparent; border:1px solid var(--border); color:var(--blue); padding:7px 18px; font-family:'Rajdhani',sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; cursor:pointer; transition:all 0.3s; }
 .lang-toggle:hover { background:var(--blue); color:white; }
+.news-btn { background:#0B7A4B; border:1px solid #0B7A4B; color:white; padding:7px 18px; margin-inline-end:10px; font-family:'Rajdhani',sans-serif; font-size:13px; font-weight:700; letter-spacing:2px; cursor:pointer; transition:all 0.3s; text-decoration:none; border-radius:4px; }
+.news-btn:hover { background:#0d9459; border-color:#0d9459; }
 @media(max-width:900px){ nav { padding:16px 20px; } .nav-links { display:none; } }
 
 /* SECTIONS */
@@ -292,6 +294,8 @@ body.ar .float-buttons { right:auto; left:28px; }
     <li><a href="#about"     data-en="About"     data-ar="من نحن">من نحن</a></li>
     <li><a href="#contact"   data-en="Contact"   data-ar="تواصل">تواصل</a></li>
   </ul>
+  <a href="https://novart1975.github.io/ss/" target="_blank" class="news-btn recos-btn" title="لوحة التوصيات">🔒 توصياتنا</a>
+  <a href="https://novart1975.github.io/news/send.html" target="_blank" class="news-btn" title="الأخبار والمناسبات">news</a>
   <button class="lang-toggle" onclick="toggleLang()">English</button>
 </nav>
 
@@ -946,21 +950,5 @@ window.addEventListener('DOMContentLoaded', () => {
   trackVisit();
 });
 </script>
-<!-- زر صفحة الإرسال (خاص بالأدمن) -->
-<a href="https://novart1975.github.io/ss/" target="_blank"
-   title="لوحة التوصيات"
-   style="position:fixed; bottom:150px; left:20px; z-index:9999;
-          padding:10px 16px; border-radius:30px;
-          background:#0b7a4b; color:#fff; display:flex;
-          align-items:center; gap:8px; direction:rtl;
-          box-shadow:0 4px 14px rgba(0,0,0,0.3);
-          text-decoration:none; font-family:sans-serif;
-          font-size:15px; font-weight:bold;
-          transition:transform .15s;"
-   onmouseover="this.style.transform='scale(1.05)'"
-   onmouseout="this.style.transform='scale(1)'">
-  <span style="font-size:18px;">🔒</span>
-  <span>توصياتنا</span>
-</a>
 </body>
 </html>
